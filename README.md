@@ -2,7 +2,7 @@
 title: Fire and Smoke Detection
 emoji: 🔥
 colorFrom: red
-colorTo: orange
+colorTo: blue
 sdk: gradio
 sdk_version: "4.0.0"
 app_file: app.py
