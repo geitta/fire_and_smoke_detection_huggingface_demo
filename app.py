@@ -1,15 +1,11 @@
 import gradio as gr
 import os
 import torch
-from model import create_yolov8_model
 from timeit import default_timer as Timer
+from ultralytics import YOLO
 
 # model preparation
-model = create_yolov8_model()
-# load saved weights
-model.load_state_dict(
-    torch.load(f="yolov8n.pt")
-)
+model = YOLO("best.pt")
 
 # predict function
 def predict(img):
